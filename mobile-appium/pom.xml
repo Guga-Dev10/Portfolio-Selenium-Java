@@ -8,7 +8,7 @@
         <artifactId>Portfolio-Selenium-Java</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>selenium-puro</artifactId>
+    <artifactId>mobile-appium</artifactId>
 
     <properties>
         <maven.compiler.source>25</maven.compiler.source>
@@ -18,9 +18,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.23.0</version>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>9.2.2</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

@@ -7,6 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="selenium-puro" />
+        <module name="mobile-appium" />
+        <module name="api-rest-assured" />
+        <module name="selenium-cucumber" />
+        <module name="unit-tests-mockito" />
       </profile>
     </annotationProcessing>
   </component>
