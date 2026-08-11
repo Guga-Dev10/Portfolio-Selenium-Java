@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.instanceOf;
 
 public class UsuarioApiTest {
 
@@ -100,5 +101,91 @@ public class UsuarioApiTest {
                 .body("id", notNullValue())
                 .body("name", equalTo(nomeDinamico))
                 .body("email", equalTo(emailDinamico));
+    }
+
+    @Test
+    public void deveCriarUsuarioEExtrairRespostaComOpcao2() {
+        long timestamp = System.currentTimeMillis();
+        String emailDinamico = "usuario_" + timestamp + "@portfolio.com";
+        String nomeDinamico = "Tester " + timestamp;
+
+        String payloadDinamico = """
+                {
+                    "name": "%s",
+                    "username": "user_%d",
+                    "email": "%s"
+                }
+                """.formatted(nomeDinamico, timestamp, emailDinamico);
+
+        // 1. Disparamos a requisição e salvamos o resultado inteiro na variável 'resposta'
+        io.restassured.response.Response resposta = given()
+                .spec(requestSpec)
+                .body(payloadDinamico)
+                .when()
+                .post("/users")
+                .then()
+                .log().all()
+                .statusCode(201)
+                .extract().response(); // Extrai a resposta para manipulação em Java
+
+        // 2. Imprime o JSON formatado de forma bonita no console do IntelliJ
+        System.out.println("--- JSON DE RESPOSTA FORMATADO ---");
+        resposta.prettyPrint();
+
+        // 3. Extraímos um campo específico do JSON usando o jsonPath()
+        int idGerado = resposta.jsonPath().getInt("id");
+        String nomeRetornado = resposta.jsonPath().getString("name");
+
+        System.out.println("ID extraído da resposta: " + idGerado);
+        System.out.println("Nome extraído da resposta: " + nomeRetornado);
+
+        // 4. Podemos fazer asserções normais do JUnit com os valores extraídos
+        org.junit.jupiter.api.Assertions.assertTrue(idGerado > 0, "O ID deveria ser maior que zero");
+        org.junit.jupiter.api.Assertions.assertEquals(nomeDinamico, nomeRetornado);
+    }
+
+    @Test
+    public void deveRetornar404AoBuscarUsuarioInexistente() {
+        int idInexistente = 99999; // ID que sabidamente não existe na base de dados
+
+        given()
+                .spec(requestSpec)
+        .when()
+                .get("/users/" + idInexistente)
+        .then()
+                .log().all()
+                .statusCode(404) // Valida que o servidor informa que o recurso não foi encontrado
+                .body("$", anEmptyMap()); // Valida que a API retorna um objeto JSON vazio e seguro
+    }
+
+    @Test
+    public void deveRetornarFalhaAoBuscarUsuarioInexistente() {
+        int idExistente = 1; // ID que sabidamente existe na base de dados
+
+        given()
+                .spec(requestSpec)
+        .when()
+                .get("/users/" + idExistente)
+        .then()
+                .log().all()
+                .statusCode(404) // Valida que o servidor informa que o recurso foi encontrado,
+                                                  // portante, deve resultar em falha no resultado
+                .body("$", anEmptyMap()); // Valida que a API retorna um objeto JSON com dados do usuário
+    }
+
+    @Test
+    public void deveValidarContratoDosTiposDeDadosDoUsuario() {
+        given()
+                .spec(requestSpec)
+                .when()
+                .get("/users/1")
+                .then()
+                .log().all()
+                .statusCode(200)
+                // Validamos se o contrato garante os tipos corretos de cada campo
+                .body("id", instanceOf(Integer.class))
+                .body("name", instanceOf(String.class))
+                .body("email", instanceOf(String.class))
+                .body("address.geo.lat", instanceOf(String.class));
     }
 }
