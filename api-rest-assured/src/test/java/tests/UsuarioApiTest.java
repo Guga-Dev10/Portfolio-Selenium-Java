@@ -26,9 +26,10 @@ public class UsuarioApiTest {
     public void deveListarUsuariosComSucesso() {
         given()
                 .spec(requestSpec)
-                .when()
+        .when()
                 .get("/users")
-                .then()
+        .then()
+                .log().all()
                 .statusCode(200) // Valida que a API respondeu com sucesso
                 .body("size()", greaterThan(0)) // Valida que a lista de usuários não está vazia
                 .body("[0].name", notNullValue()); // Valida que o nome do primeiro usuário existe
@@ -40,9 +41,10 @@ public class UsuarioApiTest {
 
         given()
                 .spec(requestSpec)
-                .when()
+        .when()
                 .get("/users/" + usuarioId)
-                .then()
+        .then()
+                .log().all()
                 .statusCode(200)
                 .body("id", equalTo(usuarioId))
                 .body("username", equalTo("Bret")) // Valida o username padrão do ID 1 nesta API
@@ -63,11 +65,40 @@ public class UsuarioApiTest {
         given()
                 .spec(requestSpec)
                 .body(novoUsuarioJson)
-                .when()
+        .when()
                 .post("/users")
-                .then()
+        .then()
+                .log().all()
                 .statusCode(201) // Status 201 Created para novas entidades
                 .body("id", notNullValue())
                 .body("name", equalTo("Gustavo Moraes"));
+    }
+
+    @Test
+    public void deveCriarUsuarioComDadosDinamicos() {
+        // Gerando dados dinâmicos baseados no timestamp atual do sistema
+        long timestamp = System.currentTimeMillis();
+        String emailDinamico = "usuario_" + timestamp + "@portfolio.com";
+        String nomeDinamico = "Tester " + timestamp;
+
+        String payloadDinamico = """
+                {
+                    "name": "%s",
+                    "username": "user_%d",
+                    "email": "%s"
+                }
+                """.formatted(nomeDinamico, timestamp, emailDinamico);
+
+        given()
+                .spec(requestSpec)
+                .body(payloadDinamico)
+        .when()
+                .post("/users")
+        .then()
+                .log().all()
+                .statusCode(201)
+                .body("id", notNullValue())
+                .body("name", equalTo(nomeDinamico))
+                .body("email", equalTo(emailDinamico));
     }
 }
