@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: tests.UsuarioApiTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.991 s <<< FAILURE! -- in tests.UsuarioApiTest
-tests.UsuarioApiTest.deveRetornarFalhaAoBuscarUsuarioInexistente -- Time elapsed: 1.777 s <<< FAILURE!
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.207 s <<< FAILURE! -- in tests.UsuarioApiTest
+tests.UsuarioApiTest.deveRetornarFalhaAoBuscarUsuarioInexistente -- Time elapsed: 2.417 s <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <404> but was <200>.

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="tests.UsuarioApiTest" time="4.991" tests="8" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="tests.UsuarioApiTest" time="6.207" tests="8" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.4.7-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\gusta\AppData\Local\Temp\surefire4172495221414268218\surefirebooter-20260816121928555_3.jar C:\Users\gusta\AppData\Local\Temp\surefire4172495221414268218 2026-08-16T12-19-28_323-jvmRun1 surefire-20260816121928555_1tmp surefire_0-20260816121928555_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\gusta\AppData\Local\Temp\surefire17621774996850837431\surefirebooter-20260818131057000_3.jar C:\Users\gusta\AppData\Local\Temp\surefire17621774996850837431 2026-08-18T13-10-56_771-jvmRun1 surefire-20260818131057000_1tmp surefire_0-20260818131057000_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\gusta\OneDrive\Desktop\Portfolio-Selenium-Java\api-rest-assured\target\test-classes;C:\Users\gusta\OneDrive\Desktop\Portfolio-Selenium-Java\api-rest-assured\target\classes;C:\Users\gusta\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\gusta\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\gusta\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\gusta\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\gusta\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\gusta\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\gusta\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\gusta\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\gusta\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\gusta\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\gusta\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\gusta\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\gusta\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\gusta\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\gusta\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\gusta\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\gusta\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\gusta\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\gusta\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gusta\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\gusta\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.0\junit-jupiter-engine-5.11.0.jar;C:\Users\gusta\.m2\repository\org\junit\platform\junit-platform-engine\1.11.0\junit-platform-engine-1.11.0.jar;C:\Users\gusta\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\gusta\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\gusta\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\gusta\.m2\repository\io\qameta\allure\allure-junit5\2.28.0\allure-junit5-2.28.0.jar;C:\Users\gusta\.m2\repository\io\qameta\allure\allure-junit-platform\2.28.0\allure-junit-platform-2.28.0.jar;C:\Users\gusta\.m2\repository\io\qameta\allure\allure-java-commons\2.28.0\allure-java-commons-2.28.0.jar;C:\Users\gusta\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\gusta\.m2\repository\io\qameta\allure\allure-model\2.28.0\allure-model-2.28.0.jar;C:\Users\gusta\.m2\repository\io\qameta\allure\allure-test-filter\2.28.0\allure-test-filter-2.28.0.jar;C:\Users\gusta\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.3\junit-platform-launcher-1.10.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\gusta\AppData\Local\Temp\surefire4172495221414268218\surefirebooter-20260816121928555_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\gusta\AppData\Local\Temp\surefire17621774996850837431\surefirebooter-20260818131057000_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.4+7-LTS"/>
@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="deveRetornarFalhaAoBuscarUsuarioInexistente" classname="tests.UsuarioApiTest" time="1.777">
+  <testcase name="deveRetornarFalhaAoBuscarUsuarioInexistente" classname="tests.UsuarioApiTest" time="2.417">
     <failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <404> but was <200>.
@@ -101,7 +101,7 @@ Expected status code <404> but was <200>.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 ]]></failure>
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Sun, 16 Aug 2026 15:19:32 GMT
+Date: Tue, 18 Aug 2026 16:11:01 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -121,10 +121,10 @@ x-powered-by: Express
 x-ratelimit-limit: 1000
 x-ratelimit-remaining: 879
 x-ratelimit-reset: 1786538875
-Age: 9086
+Age: 12061
 cf-cache-status: HIT
 Content-Encoding: gzip
-CF-RAY: a2c16afa89292bf9-GRU
+CF-RAY: a2d23126ebc0f2e4-GRU
 alt-svc: h3=":443"; ma=86400
 
 {
@@ -156,9 +156,9 @@ SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="deveBuscarUsuarioEspecificoPorId" classname="tests.UsuarioApiTest" time="0.835">
+  <testcase name="deveBuscarUsuarioEspecificoPorId" classname="tests.UsuarioApiTest" time="0.912">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Sun, 16 Aug 2026 15:19:32 GMT
+Date: Tue, 18 Aug 2026 16:11:01 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -178,10 +178,10 @@ x-powered-by: Express
 x-ratelimit-limit: 1000
 x-ratelimit-remaining: 879
 x-ratelimit-reset: 1786538875
-Age: 9086
+Age: 12061
 cf-cache-status: HIT
 Content-Encoding: gzip
-CF-RAY: a2c16afca8f0eede-GRU
+CF-RAY: a2d23129293b26ed-GRU
 alt-svc: h3=":443"; ma=86400
 
 {
@@ -209,9 +209,9 @@ alt-svc: h3=":443"; ma=86400
 }
 ]]></system-out>
   </testcase>
-  <testcase name="deveListarUsuariosComSucesso" classname="tests.UsuarioApiTest" time="0.258">
+  <testcase name="deveListarUsuariosComSucesso" classname="tests.UsuarioApiTest" time="0.169">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Sun, 16 Aug 2026 15:19:33 GMT
+Date: Tue, 18 Aug 2026 16:11:02 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 1847
 Connection: keep-alive
@@ -232,10 +232,10 @@ x-powered-by: Express
 x-ratelimit-limit: 1000
 x-ratelimit-remaining: 998
 x-ratelimit-reset: 1785194663
-Age: 26392
+Age: 646
 Accept-Ranges: bytes
 cf-cache-status: HIT
-CF-RAY: a2c16b01e8020b84-GRU
+CF-RAY: a2d2312eecde8a4f-GRU
 alt-svc: h3=":443"; ma=86400
 
 [
@@ -472,22 +472,22 @@ alt-svc: h3=":443"; ma=86400
 ]
 ]]></system-out>
   </testcase>
-  <testcase name="deveCriarUsuarioComDadosDinamicos" classname="tests.UsuarioApiTest" time="0.251">
+  <testcase name="deveCriarUsuarioComDadosDinamicos" classname="tests.UsuarioApiTest" time="0.333">
     <system-out><![CDATA[HTTP/1.1 201 Created
-Date: Sun, 16 Aug 2026 15:19:33 GMT
+Date: Tue, 18 Aug 2026 16:11:03 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 134
 Connection: keep-alive
 access-control-allow-credentials: true
 access-control-expose-headers: Location
 Cache-Control: no-cache
-etag: W/"86-p0SF3cYPm/4gJoiCp2qbeCm5lNI"
+etag: W/"86-8b91/dE8Q4wjknqfPuaEyX/zIEA"
 expires: -1
 location: https://jsonplaceholder.typicode.com/users/11
 nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
 pragma: no-cache
-report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=sx50JvZxH5sdrCP16xJ14c6BfH5lk8zQbjkVAREHHvs%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1786893573"}],"max_age":3600}
-reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=sx50JvZxH5sdrCP16xJ14c6BfH5lk8zQbjkVAREHHvs%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1786893573"
+report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=riIhOArEuyaADIcHXjy8BFu6ABy%2BlSK6NIjMmAWRrQQ%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1787069463"}],"max_age":3600}
+reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=riIhOArEuyaADIcHXjy8BFu6ABy%2BlSK6NIjMmAWRrQQ%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1787069463"
 Server: cloudflare
 vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 via: 2.0 heroku-router
@@ -495,35 +495,35 @@ x-content-type-options: nosniff
 x-powered-by: Express
 x-ratelimit-limit: 1000
 x-ratelimit-remaining: 999
-x-ratelimit-reset: 1786893585
+x-ratelimit-reset: 1787069509
 cf-cache-status: DYNAMIC
-CF-RAY: a2c16b03b8148e32-GRU
+CF-RAY: a2d231303c77d79f-GRU
 alt-svc: h3=":443"; ma=86400
 
 {
-    "name": "Tester 1786893573602",
-    "username": "user_1786893573602",
-    "email": "usuario_1786893573602@portfolio.com",
+    "name": "Tester 1787069462914",
+    "username": "user_1787069462914",
+    "email": "usuario_1787069462914@portfolio.com",
     "id": 11
 }
 ]]></system-out>
   </testcase>
-  <testcase name="deveCriarUsuarioEExtrairRespostaComOpcao2" classname="tests.UsuarioApiTest" time="0.286">
+  <testcase name="deveCriarUsuarioEExtrairRespostaComOpcao2" classname="tests.UsuarioApiTest" time="0.307">
     <system-out><![CDATA[HTTP/1.1 201 Created
-Date: Sun, 16 Aug 2026 15:19:34 GMT
+Date: Tue, 18 Aug 2026 16:11:03 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 134
 Connection: keep-alive
 access-control-allow-credentials: true
 access-control-expose-headers: Location
 Cache-Control: no-cache
-etag: W/"86-nK9RTJzG9/XRfGBZ4v6+Sfd7i+g"
+etag: W/"86-JGD4ZCK+1mX9kXJxwNtKlhhvtSA"
 expires: -1
 location: https://jsonplaceholder.typicode.com/users/11
 nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
 pragma: no-cache
-report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=bLSyOVpo20vKv9tJojxEJqJXLjbNufSFAZBL4JZKMnI%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1786893574"}],"max_age":3600}
-reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=bLSyOVpo20vKv9tJojxEJqJXLjbNufSFAZBL4JZKMnI%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1786893574"
+report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=riIhOArEuyaADIcHXjy8BFu6ABy%2BlSK6NIjMmAWRrQQ%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1787069463"}],"max_age":3600}
+reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=riIhOArEuyaADIcHXjy8BFu6ABy%2BlSK6NIjMmAWRrQQ%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1787069463"
 Server: cloudflare
 vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 via: 2.0 heroku-router
@@ -531,31 +531,31 @@ x-content-type-options: nosniff
 x-powered-by: Express
 x-ratelimit-limit: 1000
 x-ratelimit-remaining: 998
-x-ratelimit-reset: 1786893585
+x-ratelimit-reset: 1787069509
 cf-cache-status: DYNAMIC
-CF-RAY: a2c16b055bef1610-GRU
+CF-RAY: a2d231323f7cfbd2-GRU
 alt-svc: h3=":443"; ma=86400
 
 {
-    "name": "Tester 1786893573864",
-    "username": "user_1786893573864",
-    "email": "usuario_1786893573864@portfolio.com",
+    "name": "Tester 1787069463257",
+    "username": "user_1787069463257",
+    "email": "usuario_1787069463257@portfolio.com",
     "id": 11
 }
 --- JSON DE RESPOSTA FORMATADO ---
 {
-    "name": "Tester 1786893573864",
-    "username": "user_1786893573864",
-    "email": "usuario_1786893573864@portfolio.com",
+    "name": "Tester 1787069463257",
+    "username": "user_1787069463257",
+    "email": "usuario_1787069463257@portfolio.com",
     "id": 11
 }
 ID extraído da resposta: 11
-Nome extraído da resposta: Tester 1786893573864
+Nome extraído da resposta: Tester 1787069463257
 ]]></system-out>
   </testcase>
-  <testcase name="deveValidarContratoDosTiposDeDadosDoUsuario" classname="tests.UsuarioApiTest" time="0.201">
+  <testcase name="deveValidarContratoDosTiposDeDadosDoUsuario" classname="tests.UsuarioApiTest" time="0.197">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Sun, 16 Aug 2026 15:19:34 GMT
+Date: Tue, 18 Aug 2026 16:11:03 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -575,10 +575,10 @@ x-powered-by: Express
 x-ratelimit-limit: 1000
 x-ratelimit-remaining: 879
 x-ratelimit-reset: 1786538875
-Age: 9088
+Age: 12063
 cf-cache-status: HIT
 Content-Encoding: gzip
-CF-RAY: a2c16b076a09f199-GRU
+CF-RAY: a2d231345c31b559-GRU
 alt-svc: h3=":443"; ma=86400
 
 {
@@ -606,9 +606,9 @@ alt-svc: h3=":443"; ma=86400
 }
 ]]></system-out>
   </testcase>
-  <testcase name="deveCriarNovoUsuarioComSucesso" classname="tests.UsuarioApiTest" time="0.26">
+  <testcase name="deveCriarNovoUsuarioComSucesso" classname="tests.UsuarioApiTest" time="0.284">
     <system-out><![CDATA[HTTP/1.1 201 Created
-Date: Sun, 16 Aug 2026 15:19:34 GMT
+Date: Tue, 18 Aug 2026 16:11:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 109
 Connection: keep-alive
@@ -620,8 +620,8 @@ expires: -1
 location: https://jsonplaceholder.typicode.com/users/11
 nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
 pragma: no-cache
-report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=bLSyOVpo20vKv9tJojxEJqJXLjbNufSFAZBL4JZKMnI%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1786893574"}],"max_age":3600}
-reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=bLSyOVpo20vKv9tJojxEJqJXLjbNufSFAZBL4JZKMnI%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1786893574"
+report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=riIhOArEuyaADIcHXjy8BFu6ABy%2BlSK6NIjMmAWRrQQ%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1787069463"}],"max_age":3600}
+reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=riIhOArEuyaADIcHXjy8BFu6ABy%2BlSK6NIjMmAWRrQQ%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1787069463"
 Server: cloudflare
 vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 via: 2.0 heroku-router
@@ -629,9 +629,9 @@ x-content-type-options: nosniff
 x-powered-by: Express
 x-ratelimit-limit: 1000
 x-ratelimit-remaining: 997
-x-ratelimit-reset: 1786893585
+x-ratelimit-reset: 1787069509
 cf-cache-status: DYNAMIC
-CF-RAY: a2c16b0868af02f7-GRU
+CF-RAY: a2d231357e17ad79-GRU
 alt-svc: h3=":443"; ma=86400
 
 {
@@ -642,9 +642,9 @@ alt-svc: h3=":443"; ma=86400
 }
 ]]></system-out>
   </testcase>
-  <testcase name="deveRetornar404AoBuscarUsuarioInexistente" classname="tests.UsuarioApiTest" time="0.065">
+  <testcase name="deveRetornar404AoBuscarUsuarioInexistente" classname="tests.UsuarioApiTest" time="0.457">
     <system-out><![CDATA[HTTP/1.1 404 Not Found
-Date: Sun, 16 Aug 2026 15:19:34 GMT
+Date: Tue, 18 Aug 2026 16:11:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 2
 Connection: keep-alive
@@ -654,8 +654,8 @@ etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
 expires: -1
 nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
 pragma: no-cache
-report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=LGmkUG%2Foq36uA1f4N7cmuI3qjtK8kES2MMoCc8JHzxs%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1786892702"}],"max_age":3600}
-reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=LGmkUG%2Foq36uA1f4N7cmuI3qjtK8kES2MMoCc8JHzxs%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1786892702"
+report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=tu9JKTyLzg8ygBp%2B1U%2FRFeX2jHBN00RNnf21d9B%2B0jk%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1787069464"}],"max_age":3600}
+reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=tu9JKTyLzg8ygBp%2B1U%2FRFeX2jHBN00RNnf21d9B%2B0jk%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1787069464"
 Server: cloudflare
 vary: Origin, Accept-Encoding
 via: 2.0 heroku-router
@@ -663,10 +663,9 @@ x-content-type-options: nosniff
 x-powered-by: Express
 x-ratelimit-limit: 1000
 x-ratelimit-remaining: 996
-x-ratelimit-reset: 1786892745
-Age: 872
-cf-cache-status: HIT
-CF-RAY: a2c16b0a09410315-GRU
+x-ratelimit-reset: 1787069509
+cf-cache-status: EXPIRED
+CF-RAY: a2d231375850139e-GRU
 alt-svc: h3=":443"; ma=86400
 
 {
