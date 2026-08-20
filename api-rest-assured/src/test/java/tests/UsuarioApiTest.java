@@ -4,11 +4,14 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.instanceOf;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class UsuarioApiTest {
 
@@ -187,5 +190,18 @@ public class UsuarioApiTest {
                 .body("name", instanceOf(String.class))
                 .body("email", instanceOf(String.class))
                 .body("address.geo.lat", instanceOf(String.class));
+    }
+
+    @Test
+    @DisplayName("Deve validar o contrato JSON Schema da API de Usuários")
+    public void deveValidarContratoJsonSchema() {
+        given()
+                .baseUri("https://jsonplaceholder.typicode.com")
+                .when()
+                .get("/users/1")
+                .then()
+                .statusCode(200)
+                // Valida se o JSON retornado segue rigorosamente o contrato desenhado no arquivo
+                .body(matchesJsonSchemaInClasspath("user-schema.json"));
     }
 }
