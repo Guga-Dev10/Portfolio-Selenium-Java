@@ -13,5 +13,8 @@
         <module name="unit-tests-mockito" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Portfolio-Selenium-Java" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
